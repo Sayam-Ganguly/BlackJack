@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blackjack{
+    position: relative;
+    top: 30vh;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+button:hover{
+    background: rgb(156, 113, 4);
+}
+
+.name{
+    width: fit-content;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 2em;
+}
+
+#first{
+    color: goldenrod;
+    position: relative;
+    top: 0px;
+    transition: linear all 0.2s;
+}
+
+#second{
+    color: goldenrod;
+    position: absolute;
+    top: 80px;
+    transition: linear all 0.2s;
+}
+
+.name:hover #first{
+    top: -80px;
+}
+
+.name:hover #second{
+    top: 0px;
+}
